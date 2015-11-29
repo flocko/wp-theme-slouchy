@@ -107,7 +107,7 @@ add_action( 'widgets_init', 'slouchy_widgets_init' );
  */
 function slouchy_scripts() {
   wp_enqueue_style( 'slouchy-style', get_stylesheet_uri() );
-  wp_enqueue_script( 'user-script', get_template_directory_uri() . '/js/user.js', array('jquery'), '20151005', true ); 
+  wp_enqueue_script( 'app-script', get_template_directory_uri() . '/app.js', '', '20151005', true ); 
 
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
