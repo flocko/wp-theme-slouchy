@@ -6,4 +6,35 @@ Description: no desc
 Text Domain: slouchy
 */
 
-@import 'vendor/mdi/materialdesignicons';
+/**
+ * Load sass mixins
+ */
+@import "mixins";
+
+/**
+ * Load variables and color definitions
+ */
+@import "variables";
+
+/**
+ * Load base includes
+ * sanitize, typography, ...
+ */
+@import "base/modules";
+
+/**
+ * Load bower assets
+ */
+@import "vendor/mdi/materialdesignicons.scss";
+
+/**
+ * Load components
+ * 
+ */
+@import "components/modules";
+
+/**
+ * Load layout
+ * 
+ */
+@import "layout/modules";
