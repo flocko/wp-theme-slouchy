@@ -9,11 +9,17 @@ $page-maxwidth: 1200px !default;
 /**
  * Color Definitions
  */
-$color-primary: palette(blue);
-$color-primary-light: palette(blue, light);
-$color-primary-dark: palette(blue, dark);
+
+// color palette
+$color-primary: palette(red);
+$color-primary-light: palette(red, light);
+$color-primary-dark: palette(red, dark);
 $color-primary-text: #212121;
 
 $color-accent: palette(blue);
 $color-secondary-text: #727272;
 $color-icons: #ffffff;
+
+// root document colors
+$root-background-color: #ffffff;
+$root-color: #333333;

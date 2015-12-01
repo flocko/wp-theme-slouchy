@@ -9,4 +9,10 @@
 <?php wp_head(); ?>
 </head>
 
-  <body <?php body_class(); ?>>
+  <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+
+    <header class="page-header">
+      <div class="page-wrapper">
+        
+      </div>
+    </header>
