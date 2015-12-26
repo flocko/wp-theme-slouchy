@@ -9,17 +9,51 @@ $page-maxwidth: 1200px !default;
 /**
  * Color Definitions
  */
-
-// color palette
-$color-primary: palette(red);
-$color-primary-light: palette(red, light);
-$color-primary-dark: palette(red, dark);
+$color-primary: palette(blue);
+$color-primary-light: palette(blue, light);
+$color-primary-dark: palette(blue, dark);
 $color-primary-text: #212121;
 
-$color-accent: palette(blue);
+$color-accent: palette(red);
+$color-accent-text: #ffffff;
 $color-secondary-text: #727272;
-$color-icons: #ffffff;
+$color-icons: $color-accent-text;
 
-// root document colors
-$root-background-color: #ffffff;
-$root-color: #333333;
+// buttons - default
+$button-primary-color: #eeeeee !default;
+$button-secondary-color: $color-primary-text !default;
+$button-hover-color: $button-primary-color !default;
+$button-active-color: #dddddd !default;
+$button-focus-color: #eeeeee !default;
+
+// buttons - colored
+$button-primary-color-alt: $color-primary !default;
+$button-focus-color-alt: $button-focus-color !default;
+$button-primary-text: $color-accent-text !default;
+
+// buttons - accent
+$button-accent-color: $color-accent !default;
+$button-accent-text: $color-accent-text !default;
+
+// buttons - disabled
+$button-disabled-color: #dddddd !default;
+$button-disabled-text: #999999 !default;
+
+/**
+ * Button specific definitions
+ */
+$button-min-width: 64px !default;
+$button-height: 36px !default;
+$button-padding: 16px !default;
+$button-margin: 4px !default;
+$button-border-radius: 2px !default;
+$button-icon-size: 32px !default;
+
+/**
+ * Animations
+ */
+$animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1) !default;
+$animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1) !default;
+
+$animation-curve-default: $animation-curve-fast-out-slow-in !default;

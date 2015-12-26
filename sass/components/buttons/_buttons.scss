@@ -1,0 +1,127 @@
+/**
+ * Button definition template 
+ * https://github.com/google/material-design-lite
+ */
+
+.button {
+  background: transparent;
+  border: none;
+  border-radius: $button-border-radius;
+  color: $button-secondary-color;
+  position: relative;
+  height: $button-height;
+  min-width: $button-min-width;
+  padding: 0 $button-padding;
+  display: inline-block;
+  overflow: hidden;
+  will-change: box-shadow, transform;
+  transition: box-shadow 0.2s $animation-curve-fast-out-linear-in,
+              background-color 0.2s $animation-curve-default,
+              color 0.2s $animation-curve-default;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: $button-height;
+  vertical-align: middle;
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+
+  &:focus:not(:active) {
+    background-color: $button-focus-color;
+  }
+
+  &:active {
+    background-color: $button-active-color;
+  }
+
+  &.button--colored {
+    color: $button-primary-color-alt;
+
+    &:focus:not(:active) {
+      background-color: $button-focus-color-alt;
+    }
+  }
+
+  &.button--accent {
+    color: $button-accent-color;
+
+    &:focus:not(:active) {
+      background-color: $button-focus-color-alt;
+    }
+  }
+
+  &[disabled][disabled],
+  &.mdl-button--disabled.mdl-button--disabled {
+    color: $button-disabled-text;
+    cursor: default;
+    background-color: transparent;
+  }  
+}
+
+.button--raised {
+  background: $button-primary-color;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+
+  &:active {
+    background-color: $button-active-color;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+  }
+
+  &:focus:not(:active){
+    background-color: $button-active-color;
+    box-shadow: 0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);
+  }
+
+  &[disabled][disabled],
+  &.button--disabled.button--disabled {
+    background-color: $button-disabled-color;
+    color: $button-disabled-text;
+  }  
+}
+
+.button--colored.button--colored {
+  color: $button-primary-color-alt;
+
+  &.button--raised {
+    color: $button-primary-text;
+    background-color: $button-primary-color-alt;
+
+    &:active {
+      color: $button-primary-text;
+      background-color: $button-primary-color-alt;
+    }
+
+    &:focus:not(:active) {
+      color: $button-primary-text;
+      background-color: $button-primary-color-alt;
+    }
+  }
+    
+  &[disabled][disabled],
+  &.button--disabled.button--disabled {
+    background-color: $button-disabled-color;
+    color: $button-disabled-text;
+  }
+}
+
+.button--accent.button--accent {
+  color: $button-accent-color;
+
+  &.button--raised {
+    color: $button-accent-text;
+    background-color: $button-accent-color;
+
+    &:active, &:focus:not(:active) {
+      color: $button-accent-text;
+      background-color: $button-accent-color;
+    }
+  }
+
+  &[disabled][disabled],
+  &.button--disabled.button--disabled {
+    background-color: $button-disabled-color;
+    color: $button-disabled-text;
+  }
+}
